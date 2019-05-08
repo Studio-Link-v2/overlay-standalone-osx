@@ -34,7 +34,7 @@ static void ua_exit_handler(void *arg)
     // Insert code here to initialize your application
     (void)sys_coredump_set(true);
     libre_init();
-    conf_configure();
+    conf_configure(false);
     baresip_init(conf_config(), false);
     uag_set_exit_handler(ua_exit_handler, NULL);
     ua_init("baresip v" BARESIP_VERSION " (" ARCH "/" OS ")", true, true, true, false);
