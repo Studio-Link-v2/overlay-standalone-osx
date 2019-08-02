@@ -35,9 +35,9 @@ static void ua_exit_handler(void *arg)
     (void)sys_coredump_set(true);
     libre_init();
     conf_configure(false);
-    baresip_init(conf_config(), false);
+    baresip_init(conf_config());
     uag_set_exit_handler(ua_exit_handler, NULL);
-    ua_init("baresip v" BARESIP_VERSION " (" ARCH "/" OS ")", true, true, true, false);
+    ua_init("baresip v" BARESIP_VERSION " (" ARCH "/" OS ")", true, true, true);
     conf_modules();
     uag_set_exit_handler(ua_exit_handler, NULL);    
     pthread_create(&tid, NULL, (void*(*)(void*))&re_main, NULL);
