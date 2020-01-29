@@ -245,7 +245,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = StudioLinkStandalone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = StudioLink.StudioLinkStandalone;
+				PRODUCT_BUNDLE_IDENTIFIER = link.studio.standalone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -257,7 +257,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = StudioLinkStandalone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = StudioLink.StudioLinkStandalone;
+				PRODUCT_BUNDLE_IDENTIFIER = link.studio.standalone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
