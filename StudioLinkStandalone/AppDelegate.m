@@ -20,6 +20,8 @@ static void ua_exit_handler(void *arg)
 
 	/* The main run-loop can be stopped now */
 	re_cancel();
+	
+	[NSApp terminate:nil];
 }
 
 
@@ -48,6 +50,7 @@ static void ua_exit_handler(void *arg)
     ua_stop_all(false);
     sys_msleep(500);
     ua_close();
+    module_app_unload();
     conf_close();
     baresip_close();
     mod_close();
